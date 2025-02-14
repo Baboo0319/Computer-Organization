@@ -1,0 +1,19 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sim_1/new/SingalCycleCPU_sim.v,1733048170,verilog,,,,SingleCycleCPU_sim,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sim_1/new/basys_sim.v,1733063806,verilog,,,,basys_sim,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ALU.v,1733127697,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v,,ALU,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Basys3.v,1733063824,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/CLK_slow.v,,Basys3,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/CLK_slow.v,1733062364,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v,,CLK_slow,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/ControlUnit.v,1733132737,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMemory.v,,ControlUnit,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/DataMemory.v,1733048170,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v,,DataMemory,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/Display_7SegLED.v,1733063015,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v,,Display_7SegLED,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/InstructionMemory.v,1733130866,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v,,InstructionMemory,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/PC.v,1733048170,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/RegisterFile.v,,PC,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/RegisterFile.v,1733129149,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SignZeroExtend.v,,RegisterFile,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SignZeroExtend.v,1733048170,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v,,SignZeroExtend,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/SingleCycleCPU.v,1733197444,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sim_1/new/SingalCycleCPU_sim.v,,SingleCycleCPU,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sources_1/new/keyboard_CLK.v,1733065495,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.srcs/sim_1/new/basys_sim.v,,Keyboard_CLK,,,,,,,,

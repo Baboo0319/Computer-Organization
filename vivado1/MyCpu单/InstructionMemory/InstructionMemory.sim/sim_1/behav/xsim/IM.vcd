@@ -1,0 +1,107 @@
+$date
+   Tue Dec  3 20:20:50 2024
+$end
+$version
+  2019.2
+$end
+$timescale
+  1ps
+$end
+$scope module IM_sim $end
+$var reg 32 ! IAddr [31:0] $end
+$var reg 1 " RW $end
+$var reg 4 # PC4 [3:0] $end
+$var wire 6 $ op [5:0] $end
+$var wire 6 % funct [5:0] $end
+$var wire 5 & rs [4:0] $end
+$var wire 5 ' rt [4:0] $end
+$var wire 5 ( rd [4:0] $end
+$var wire 16 ) Immediate [15:0] $end
+$var wire 5 * Sa [4:0] $end
+$var wire 32 + JumpPC [31:0] $end
+$scope module uut $end
+$var wire 4 , PC4 [3:0] $end
+$var wire 32 - IAddr [31:0] $end
+$var wire 1 . RW $end
+$var wire 6 $ op [5:0] $end
+$var wire 6 % funct [5:0] $end
+$var wire 5 & rs [4:0] $end
+$var wire 5 ' rt [4:0] $end
+$var wire 5 ( rd [4:0] $end
+$var wire 16 ) Immediate [15:0] $end
+$var wire 5 * Sa [4:0] $end
+$var wire 32 + JumpPC [31:0] $end
+$var reg 32 / IDataOut [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+bx !
+x"
+bx #
+b0 $
+b0 %
+b0 &
+b0 '
+b0 (
+b0 )
+b0 *
+bx0000000000000000000000000000 +
+bx ,
+bx -
+x.
+b0 /
+$end
+#10000
+b0 !
+0"
+b0 #
+b0 +
+b0 ,
+b0 -
+0.
+#60000
+b0 !
+1"
+b0 #
+b1001 $
+bx %
+b1 '
+b1000 )
+b1000000000000100000 +
+1.
+b100100000000010000000000001000 /
+#110000
+b100 !
+b0 #
+b1101 $
+b10 '
+b10 )
+b10000000000000001000 +
+b100 -
+b110100000000100000000000000010 /
+#160000
+b1000 !
+b0 #
+b0 $
+b100000 %
+b10 &
+b1 '
+b11 (
+b1100000100000 )
+b1000001000110000010000000 +
+b1000 -
+b10000010001100000100000 /
+#210000
+b1001000 !
+b0 #
+b10 $
+bx %
+b0 &
+b0 '
+b0 (
+b10011 )
+b1001100 +
+b1001000 -
+b1000000000000000000000010011 /

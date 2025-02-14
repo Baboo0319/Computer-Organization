@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="RegFile_sim_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="RegFile_sim" />
+            <top_module name="glbl" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="87501fs"></ZoomEndTime>
+      <Cursor1Time time="30000fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="229"></NameColumnWidth>
+      <ValueColumnWidth column_width="144"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="12" />
+   <wvobject fp_name="/RegFile_sim/CLK" type="logic">
+      <obj_property name="ElementShortName">CLK</obj_property>
+      <obj_property name="ObjectShortName">CLK</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/RegDst" type="logic">
+      <obj_property name="ElementShortName">RegDst</obj_property>
+      <obj_property name="ObjectShortName">RegDst</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/RegWre" type="logic">
+      <obj_property name="ElementShortName">RegWre</obj_property>
+      <obj_property name="ObjectShortName">RegWre</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/DBDataSrc" type="logic">
+      <obj_property name="ElementShortName">DBDataSrc</obj_property>
+      <obj_property name="ObjectShortName">DBDataSrc</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/rs" type="array">
+      <obj_property name="ElementShortName">rs[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rs[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/rt" type="array">
+      <obj_property name="ElementShortName">rt[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rt[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/rd" type="array">
+      <obj_property name="ElementShortName">rd[4:0]</obj_property>
+      <obj_property name="ObjectShortName">rd[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/dataFromALU" type="array">
+      <obj_property name="ElementShortName">dataFromALU[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataFromALU[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/dataFromRW" type="array">
+      <obj_property name="ElementShortName">dataFromRW[31:0]</obj_property>
+      <obj_property name="ObjectShortName">dataFromRW[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/Data1" type="array">
+      <obj_property name="ElementShortName">Data1[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data1[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/Data2" type="array">
+      <obj_property name="ElementShortName">Data2[31:0]</obj_property>
+      <obj_property name="ObjectShortName">Data2[31:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/RegFile_sim/uut/register" type="array">
+      <obj_property name="ElementShortName">register[0:31][31:0]</obj_property>
+      <obj_property name="ObjectShortName">register[0:31][31:0]</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+   </wvobject>
+</wave_config>

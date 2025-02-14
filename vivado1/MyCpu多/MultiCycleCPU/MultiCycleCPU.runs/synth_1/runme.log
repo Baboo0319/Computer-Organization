@@ -1,0 +1,959 @@
+
+*** Running vivado
+    with args -log basys3.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source basys3.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source basys3.tcl -notrace
+Command: synth_design -top basys3 -part xc7a35tcpg236-1
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7a35t'
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 2004 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 948.605 ; gain = 233.703
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'basys3' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/basys3.v:3]
+INFO: [Synth 8-6157] synthesizing module 'multiCycleCPU' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/MultiCycleCPU.v:4]
+INFO: [Synth 8-6157] synthesizing module 'ChangeState' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/StateChange.v:3]
+	Parameter IF bound to: 3'b000 
+	Parameter ID bound to: 3'b001 
+	Parameter EXE1 bound to: 3'b110 
+	Parameter EXE2 bound to: 3'b101 
+	Parameter EXE3 bound to: 3'b010 
+	Parameter WB1 bound to: 3'b111 
+	Parameter WB2 bound to: 3'b100 
+	Parameter MEM bound to: 3'b011 
+WARNING: [Synth 8-5788] Register new_state_reg in module ChangeState is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/StateChange.v:22]
+INFO: [Synth 8-6155] done synthesizing module 'ChangeState' (1#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/StateChange.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ControlUnit' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v:2]
+	Parameter IF bound to: 3'b000 
+	Parameter ID bound to: 3'b001 
+	Parameter EXE1 bound to: 3'b110 
+	Parameter EXE2 bound to: 3'b101 
+	Parameter EXE3 bound to: 3'b010 
+	Parameter WB1 bound to: 3'b111 
+	Parameter WB2 bound to: 3'b100 
+	Parameter MEM bound to: 3'b011 
+WARNING: [Synth 8-567] referenced signal 'OpCode' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v:33]
+WARNING: [Synth 8-567] referenced signal 'func' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v:33]
+WARNING: [Synth 8-567] referenced signal 'zero' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v:33]
+WARNING: [Synth 8-567] referenced signal 'sign' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v:33]
+INFO: [Synth 8-6155] done synthesizing module 'ControlUnit' (2#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v:2]
+INFO: [Synth 8-6157] synthesizing module 'PC' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/PC.v:5]
+WARNING: [Synth 8-5788] Register Address_reg in module PC is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/PC.v:32]
+INFO: [Synth 8-6155] done synthesizing module 'PC' (3#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/PC.v:5]
+INFO: [Synth 8-6157] synthesizing module 'InstructionMemory' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/InstructionMemory.v:4]
+INFO: [Synth 8-3876] $readmem data file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/Instructions.txt' is read successfully [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/InstructionMemory.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'InstructionMemory' (4#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/InstructionMemory.v:4]
+INFO: [Synth 8-6157] synthesizing module 'IR' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/IR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'IR' (5#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/IR.v:3]
+WARNING: [Synth 8-689] width (4) of port connection 'PC4' does not match port width (1) of module 'IR' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/MultiCycleCPU.v:47]
+INFO: [Synth 8-6157] synthesizing module 'RegisterFile' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:4]
+WARNING: [Synth 8-567] referenced signal 'RegWre' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:47]
+WARNING: [Synth 8-567] referenced signal 'writeReg' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:47]
+WARNING: [Synth 8-567] referenced signal 'writeData' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:47]
+WARNING: [Synth 8-567] referenced signal 'WrRegDSrc' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:47]
+INFO: [Synth 8-6155] done synthesizing module 'RegisterFile' (6#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:4]
+INFO: [Synth 8-6157] synthesizing module 'DR' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DR.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'DR' (7#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DR.v:3]
+INFO: [Synth 8-6157] synthesizing module 'ALU' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ALU.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'ALU' (8#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ALU.v:3]
+INFO: [Synth 8-6157] synthesizing module 'DataMemory' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:3]
+WARNING: [Synth 8-567] referenced signal 'Memory' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:15]
+WARNING: [Synth 8-567] referenced signal 'address' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:15]
+WARNING: [Synth 8-567] referenced signal 'address' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:25]
+INFO: [Synth 8-6155] done synthesizing module 'DataMemory' (9#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:3]
+INFO: [Synth 8-6157] synthesizing module 'mux2to1' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/mux2to1.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'mux2to1' (10#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/mux2to1.v:3]
+INFO: [Synth 8-6157] synthesizing module 'SignZeroExtend' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/SignZeroExtend.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'SignZeroExtend' (11#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/SignZeroExtend.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'multiCycleCPU' (12#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/MultiCycleCPU.v:4]
+WARNING: [Synth 8-689] width (32) of port connection 'rs' does not match port width (5) of module 'multiCycleCPU' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/basys3.v:25]
+WARNING: [Synth 8-689] width (32) of port connection 'rt' does not match port width (5) of module 'multiCycleCPU' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/basys3.v:25]
+INFO: [Synth 8-6157] synthesizing module 'CLK_slow' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/CLK_slow.v:3]
+	Parameter limit bound to: 100000 - type: integer 
+WARNING: [Synth 8-5788] Register clk_sys_reg in module CLK_slow is has both Set and reset with same priority. This may cause simulation mismatches. Consider rewriting code  [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/CLK_slow.v:21]
+INFO: [Synth 8-6155] done synthesizing module 'CLK_slow' (13#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/CLK_slow.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Keyboard_CLK' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/Keyboard_CLK.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'Keyboard_CLK' (14#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/Keyboard_CLK.v:3]
+INFO: [Synth 8-6157] synthesizing module 'counter' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/counter.v:3]
+	Parameter limit bound to: 100000 - type: integer 
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/counter.v:27]
+INFO: [Synth 8-6155] done synthesizing module 'counter' (15#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/counter.v:3]
+INFO: [Synth 8-6157] synthesizing module 'Display_7SegLED' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/Display_7SegLED.v:3]
+INFO: [Synth 8-226] default block is never used [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/Display_7SegLED.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'Display_7SegLED' (16#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/Display_7SegLED.v:3]
+INFO: [Synth 8-6157] synthesizing module 'change' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:3]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:24]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:32]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:40]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:48]
+INFO: [Synth 8-155] case statement is not full and has no default [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:22]
+WARNING: [Synth 8-567] referenced signal 'Reset' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+WARNING: [Synth 8-567] referenced signal 'AN' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+WARNING: [Synth 8-567] referenced signal 'SW' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+WARNING: [Synth 8-567] referenced signal 'newPC' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+WARNING: [Synth 8-567] referenced signal 'regRs' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+WARNING: [Synth 8-567] referenced signal 'regRt' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+WARNING: [Synth 8-567] referenced signal 'writeData' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+WARNING: [Synth 8-567] referenced signal 'curPC' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+WARNING: [Synth 8-567] referenced signal 'instruction' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+WARNING: [Synth 8-567] referenced signal 'aluResult' should be on the sensitivity list [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:18]
+INFO: [Synth 8-6155] done synthesizing module 'change' (17#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/change.v:3]
+INFO: [Synth 8-6155] done synthesizing module 'basys3' (18#1) [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/basys3.v:3]
+WARNING: [Synth 8-3331] design change has unconnected port myCLK
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[31]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[30]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[29]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[28]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[27]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[26]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[25]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[24]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[23]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[22]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[21]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[20]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[19]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[18]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[17]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[16]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[15]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[14]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[13]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[12]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[11]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[10]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[9]
+WARNING: [Synth 8-3331] design change has unconnected port aluResult[8]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[31]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[30]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[29]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[28]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[27]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[26]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[25]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[24]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[23]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[22]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[21]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[20]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[19]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[18]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[17]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[16]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[15]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[14]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[13]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[12]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[11]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[10]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[9]
+WARNING: [Synth 8-3331] design change has unconnected port curPC[8]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[31]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[30]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[29]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[28]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[27]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[26]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[25]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[24]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[23]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[22]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[21]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[20]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[19]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[18]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[17]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[16]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[15]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[14]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[13]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[12]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[11]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[10]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[9]
+WARNING: [Synth 8-3331] design change has unconnected port newPC[8]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[31]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[30]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[29]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[28]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[27]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[26]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[25]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[24]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[23]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[22]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[21]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[20]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[19]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[18]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[17]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[16]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[15]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[14]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[13]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[12]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[11]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[10]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[9]
+WARNING: [Synth 8-3331] design change has unconnected port writeData[8]
+WARNING: [Synth 8-3331] design change has unconnected port regRs[31]
+WARNING: [Synth 8-3331] design change has unconnected port regRs[30]
+WARNING: [Synth 8-3331] design change has unconnected port regRs[29]
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1036.301 ; gain = 321.398
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1036.301 ; gain = 321.398
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:02 ; elapsed = 00:00:04 . Memory (MB): peak = 1036.301 ; gain = 321.398
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1036.301 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/constrs_1/new/yinjiao.xdc]
+Finished Parsing XDC File [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/constrs_1/new/yinjiao.xdc]
+INFO: [Project 1-236] Implementation specific constraints were found while reading constraint file [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/constrs_1/new/yinjiao.xdc]. These constraints will be ignored for synthesis but will be used in implementation. Impacted constraints are listed in the file [.Xil/basys3_propImpl.xdc].
+Resolution: To avoid this warning, move constraints listed in [.Xil/basys3_propImpl.xdc] to another XDC file and exclude this new file from synthesis with the used_in_synthesis property (File Properties dialog in GUI) and re-run elaboration/synthesis.
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1149.402 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 1149.402 ; gain = 0.000
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1149.402 ; gain = 434.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7a35tcpg236-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1149.402 ; gain = 434.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:03 ; elapsed = 00:00:09 . Memory (MB): peak = 1149.402 ; gain = 434.500
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'AN_reg' in module 'counter'
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcA_reg' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v:44]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUSrcB_reg' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v:45]
+WARNING: [Synth 8-327] inferring latch for variable 'ALUOp_reg' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v:46]
+WARNING: [Synth 8-327] inferring latch for variable 'IDataOut_reg' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/InstructionMemory.v:26]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[0]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[1]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[2]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[3]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[4]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[5]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[6]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[7]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[8]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[9]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[10]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[11]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[12]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[13]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[14]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[15]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[16]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[17]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[18]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[19]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[20]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[21]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[22]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[23]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[24]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[25]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[26]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[27]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[28]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[29]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[30]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'register_reg[31]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v:49]
+WARNING: [Synth 8-327] inferring latch for variable 'DataOut_reg' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:17]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[0]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[1]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[2]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[3]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[4]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[5]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[6]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[7]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[8]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[9]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[10]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[11]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[12]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[13]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[14]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[15]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[16]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[17]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[18]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[19]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[20]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[21]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[22]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[23]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[24]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[25]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[26]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[27]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[28]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[29]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[30]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[31]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[32]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[33]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[34]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[35]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[36]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[37]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[38]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[39]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[40]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[41]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[42]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[43]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[44]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[45]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[46]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[47]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[48]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[49]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[50]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[51]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[52]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[53]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[54]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[55]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[56]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[57]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[58]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[59]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[60]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[61]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+WARNING: [Synth 8-327] inferring latch for variable 'Memory_reg[62]' [C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v:27]
+INFO: [Common 17-14] Message 'Synth 8-327' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                 iSTATE3 |                            00001 |                             0000
+                 iSTATE2 |                            00010 |                             0111
+                  iSTATE |                            00100 |                             1110
+                 iSTATE0 |                            01000 |                             1101
+                 iSTATE1 |                            10000 |                             1011
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'AN_reg' using encoding 'one-hot' in module 'counter'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:04 ; elapsed = 00:00:12 . Memory (MB): peak = 1149.402 ; gain = 434.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 1     
+	   2 Input     17 Bit       Adders := 1     
+	   2 Input      7 Bit       Adders := 3     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Registers : 
+	               32 Bit    Registers := 7     
+	               29 Bit    Registers := 1     
+	               17 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+	                3 Bit    Registers := 1     
+	                1 Bit    Registers := 4     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 7     
+	   2 Input     17 Bit        Muxes := 1     
+	   2 Input     16 Bit        Muxes := 1     
+	   2 Input      8 Bit        Muxes := 126   
+	   4 Input      8 Bit        Muxes := 16    
+	   4 Input      5 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 2     
+	   4 Input      4 Bit        Muxes := 4     
+	   4 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+	   4 Input      2 Bit        Muxes := 16    
+	   2 Input      1 Bit        Muxes := 196   
+	   3 Input      1 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 98    
+	   4 Input      1 Bit        Muxes := 33    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module ChangeState 
+Detailed RTL Component Info : 
++---Registers : 
+	                3 Bit    Registers := 1     
++---Muxes : 
+	   4 Input      3 Bit        Muxes := 1     
+	   9 Input      3 Bit        Muxes := 1     
+Module ControlUnit 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 6     
+	   3 Input      1 Bit        Muxes := 1     
+Module PC 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 2     
++---Registers : 
+	               32 Bit    Registers := 1     
++---Muxes : 
+	   4 Input     32 Bit        Muxes := 2     
+	   2 Input     32 Bit        Muxes := 2     
+Module InstructionMemory 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      7 Bit       Adders := 3     
+Module IR 
+Detailed RTL Component Info : 
++---Registers : 
+	               29 Bit    Registers := 1     
+	               16 Bit    Registers := 1     
+	                6 Bit    Registers := 2     
+	                5 Bit    Registers := 4     
+Module RegisterFile 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+	   4 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 64    
+Module DR 
+Detailed RTL Component Info : 
++---Registers : 
+	               32 Bit    Registers := 1     
+Module ALU 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   3 Input     32 Bit       Adders := 1     
++---XORs : 
+	   2 Input     32 Bit         XORs := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 2     
+Module DataMemory 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input      8 Bit        Muxes := 126   
+	   4 Input      8 Bit        Muxes := 16    
+	   4 Input      2 Bit        Muxes := 16    
+	   5 Input      1 Bit        Muxes := 96    
+	   2 Input      1 Bit        Muxes := 125   
+	   4 Input      1 Bit        Muxes := 32    
+Module mux2to1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module SignZeroExtend 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     16 Bit        Muxes := 1     
+Module CLK_slow 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
++---Registers : 
+	               32 Bit    Registers := 1     
+	                1 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 1     
+Module Keyboard_CLK 
+Detailed RTL Component Info : 
++---Registers : 
+	                1 Bit    Registers := 3     
+Module counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     17 Bit       Adders := 1     
++---Registers : 
+	               17 Bit    Registers := 1     
++---Muxes : 
+	   2 Input     17 Bit        Muxes := 1     
+	   5 Input      5 Bit        Muxes := 1     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+Module change 
+Detailed RTL Component Info : 
++---Muxes : 
+	   4 Input      4 Bit        Muxes := 4     
+	   5 Input      4 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+	   4 Input      1 Bit        Muxes := 1     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 90 (col length:60)
+BRAMs: 100 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[8]' (FDE) to 'my_SCPU/ir/sa_reg[0]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[9]' (FDE) to 'my_SCPU/ir/sa_reg[1]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[10]' (FDE) to 'my_SCPU/ir/sa_reg[2]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[11]' (FDE) to 'my_SCPU/ir/sa_reg[3]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[12]' (FDE) to 'my_SCPU/ir/sa_reg[4]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[13]' (FDE) to 'my_SCPU/ir/rd_reg[0]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[14]' (FDE) to 'my_SCPU/ir/rd_reg[1]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[15]' (FDE) to 'my_SCPU/ir/rd_reg[2]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[16]' (FDE) to 'my_SCPU/ir/rd_reg[3]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[17]' (FDE) to 'my_SCPU/ir/rd_reg[4]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[18]' (FDE) to 'my_SCPU/ir/rt_reg[0]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[19]' (FDE) to 'my_SCPU/ir/rt_reg[1]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[20]' (FDE) to 'my_SCPU/ir/rt_reg[2]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[21]' (FDE) to 'my_SCPU/ir/rt_reg[3]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[22]' (FDE) to 'my_SCPU/ir/rt_reg[4]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[23]' (FDE) to 'my_SCPU/ir/rs_reg[0]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[24]' (FDE) to 'my_SCPU/ir/rs_reg[1]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[25]' (FDE) to 'my_SCPU/ir/rs_reg[2]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[26]' (FDE) to 'my_SCPU/ir/rs_reg[3]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[27]' (FDE) to 'my_SCPU/ir/rs_reg[4]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/rd_reg[0]' (FDE) to 'my_SCPU/ir/Immediate_reg[11]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/rd_reg[1]' (FDE) to 'my_SCPU/ir/Immediate_reg[12]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/rd_reg[2]' (FDE) to 'my_SCPU/ir/Immediate_reg[13]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/rd_reg[4]' (FDE) to 'my_SCPU/ir/Immediate_reg[15]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/rd_reg[3]' (FDE) to 'my_SCPU/ir/Immediate_reg[14]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[4]' (FDE) to 'my_SCPU/ir/func_reg[2]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[0]' (FDE) to 'my_SCPU/ir/JumpPC_reg[1]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[5]' (FDE) to 'my_SCPU/ir/func_reg[3]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (\my_SCPU/ir/JumpPC_reg[1] )
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[6]' (FDE) to 'my_SCPU/ir/func_reg[4]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[2]' (FDE) to 'my_SCPU/ir/func_reg[0]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[7]' (FDE) to 'my_SCPU/ir/func_reg[5]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/JumpPC_reg[3]' (FDE) to 'my_SCPU/ir/func_reg[1]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/sa_reg[0]' (FDE) to 'my_SCPU/ir/Immediate_reg[6]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/Immediate_reg[0]' (FDE) to 'my_SCPU/ir/func_reg[0]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/sa_reg[1]' (FDE) to 'my_SCPU/ir/Immediate_reg[7]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/Immediate_reg[1]' (FDE) to 'my_SCPU/ir/func_reg[1]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/sa_reg[2]' (FDE) to 'my_SCPU/ir/Immediate_reg[8]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/Immediate_reg[2]' (FDE) to 'my_SCPU/ir/func_reg[2]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/sa_reg[3]' (FDE) to 'my_SCPU/ir/Immediate_reg[9]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/Immediate_reg[3]' (FDE) to 'my_SCPU/ir/func_reg[3]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/sa_reg[4]' (FDE) to 'my_SCPU/ir/Immediate_reg[10]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/Immediate_reg[4]' (FDE) to 'my_SCPU/ir/func_reg[4]'
+INFO: [Synth 8-3886] merging instance 'my_SCPU/ir/Immediate_reg[5]' (FDE) to 'my_SCPU/ir/func_reg[5]'
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[31]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[30]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[29]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[28]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[27]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[26]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[25]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[24]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[23]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[22]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[21]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[20]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[19]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[18]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[17]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[16]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[15]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[14]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[13]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[12]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[11]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[10]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[9]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[8]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[7]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[6]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[5]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[4]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[3]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[2]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[1]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/IM/IDataOut_reg[0]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][31]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][21]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][28]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][20]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][10]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][30]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][4]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][0]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][1]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][5]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][6]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][2]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][7]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][3]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][9]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][8]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][22]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][19]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][13]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][27]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][16]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][25]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][24]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][29]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][12]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][14]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][17]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][11]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][23]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][15]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][26]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][18]  is always disabled
+WARNING: [Synth 8-264] enable of latch \my_SCPU/RF/register_reg[0][18]  is always disabled
+INFO: [Common 17-14] Message 'Synth 8-264' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:16 ; elapsed = 00:00:42 . Memory (MB): peak = 1149.402 ; gain = 434.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+ROM:
++------------------+------------+---------------+----------------+
+|Module Name       | RTL Object | Depth x Width | Implemented As | 
++------------------+------------+---------------+----------------+
+|InstructionMemory | p_0_out    | 128x8         | LUT            | 
+|InstructionMemory | p_0_out    | 128x8         | LUT            | 
+|InstructionMemory | p_0_out    | 128x8         | LUT            | 
+|InstructionMemory | p_0_out    | 128x8         | LUT            | 
+|multiCycleCPU     | p_0_out    | 128x8         | LUT            | 
+|multiCycleCPU     | p_0_out    | 128x8         | LUT            | 
+|multiCycleCPU     | p_0_out    | 128x8         | LUT            | 
++------------------+------------+---------------+----------------+
+
+---------------------------------------------------------------------------------
+Finished ROM, RAM, DSP and Shift Register Reporting
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:47 . Memory (MB): peak = 1149.402 ; gain = 434.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:18 ; elapsed = 00:00:47 . Memory (MB): peak = 1149.402 ; gain = 434.500
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][31]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][30]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][29]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][28]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][27]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][26]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][25]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][24]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][23]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][22]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][21]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][20]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][19]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][18]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][17]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][16]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][15]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][14]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][13]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][12]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][11]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][10]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][9]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][8]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][7]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][6]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][5]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][4]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][3]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][2]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][1]) is unused and will be removed from module basys3.
+WARNING: [Synth 8-3332] Sequential element (my_SCPU/RF/register_reg[0][0]) is unused and will be removed from module basys3.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:18 ; elapsed = 00:00:48 . Memory (MB): peak = 1174.258 ; gain = 459.355
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:19 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.117 ; gain = 464.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:19 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.117 ; gain = 464.215
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:19 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.117 ; gain = 464.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:19 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.117 ; gain = 464.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:19 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.117 ; gain = 464.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:19 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.117 ; gain = 464.215
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |BUFG   |    12|
+|2     |CARRY4 |    48|
+|3     |LUT1   |    38|
+|4     |LUT2   |   136|
+|5     |LUT3   |   431|
+|6     |LUT4   |   385|
+|7     |LUT5   |   384|
+|8     |LUT6   |  1360|
+|9     |MUXF7  |   416|
+|10    |FDCE   |    74|
+|11    |FDPE   |     3|
+|12    |FDRE   |   217|
+|13    |FDSE   |     1|
+|14    |LD     |  2056|
+|15    |LDC    |     4|
+|16    |IBUF   |     5|
+|17    |OBUF   |    12|
++------+-------+------+
+
+Report Instance Areas: 
++------+-------------+----------------+------+
+|      |Instance     |Module          |Cells |
++------+-------------+----------------+------+
+|1     |top          |                |  5582|
+|2     |  cd         |CLK_slow        |    82|
+|3     |  led        |Display_7SegLED |     7|
+|4     |  my_SCPU    |multiCycleCPU   |  5395|
+|5     |    Adr      |DR              |   127|
+|6     |    Bdr      |DR_0            |   307|
+|7     |    CU       |ControlUnit     |   228|
+|8     |    DM       |DataMemory      |  1487|
+|9     |    RF       |RegisterFile    |  1875|
+|10    |    ST       |ChangeState     |    12|
+|11    |    alu      |ALU             |    12|
+|12    |    aluOutDr |DR_1            |   679|
+|13    |    dbdr     |DR_2            |    32|
+|14    |    ir       |IR              |   365|
+|15    |    pc       |PC              |   175|
+|16    |    pcadd    |DR_3            |    64|
+|17    |  my_cg      |change          |     5|
+|18    |  my_ct      |counter         |    60|
+|19    |  my_key     |Keyboard_CLK    |     4|
++------+-------------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:19 ; elapsed = 00:00:50 . Memory (MB): peak = 1179.117 ; gain = 464.215
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 703 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:17 ; elapsed = 00:00:49 . Memory (MB): peak = 1179.117 ; gain = 351.113
+Synthesis Optimization Complete : Time (s): cpu = 00:00:19 ; elapsed = 00:00:51 . Memory (MB): peak = 1179.117 ; gain = 464.215
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.048 . Memory (MB): peak = 1191.461 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2524 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1191.461 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 2060 instances were transformed.
+  LD => LDCE: 2056 instances
+  LDC => LDCE: 4 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+106 Infos, 391 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:21 ; elapsed = 00:00:55 . Memory (MB): peak = 1191.461 ; gain = 765.684
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1191.461 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.runs/synth_1/basys3.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file basys3_utilization_synth.rpt -pb basys3_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Dec 27 17:30:31 2024...

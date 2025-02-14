@@ -1,0 +1,119 @@
+/*
+
+Xilinx Vivado v2019.2 (64-bit) [Major: 2019, Minor: 2]
+SW Build: 2708876 on Wed Nov  6 21:40:23 MST 2019
+IP Build: 2700528 on Thu Nov  7 00:09:20 MST 2019
+
+Process ID (PID): 40404
+License: Customer
+
+Current time: 	Mon Dec 02 15:05:18 CST 2024
+Time zone: 	China Standard Time (Asia/Shanghai)
+
+OS: Windows 10
+OS Version: 10.0
+OS Architecture: amd64
+Available processors (cores): 16
+
+Screen size: 2560x1600
+Screen resolution (DPI): 150
+Available screens: 1
+Available disk space: 38 GB
+Default font: family=Dialog,name=Dialog,style=plain,size=18
+
+Java version: 	9.0.4 64-bit
+Java home: 	D:/Vivado/Vivado/2019.2/tps/win64/jre9.0.4
+Java executable location: 	D:/Vivado/Vivado/2019.2/tps/win64/jre9.0.4/bin/java.exe
+Java initial memory (-Xms): 	128 MB
+Java maximum memory (-Xmx):	 3 GB
+
+
+User name: 	Bamboo
+User home directory: C:/Users/Bamboo
+User working directory: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU
+User country: 	CN
+User language: 	zh
+User locale: 	zh_CN
+
+RDI_BASEROOT: D:/Vivado/Vivado
+HDI_APPROOT: D:/Vivado/Vivado/2019.2
+RDI_DATADIR: D:/Vivado/Vivado/2019.2/data
+RDI_BINDIR: D:/Vivado/Vivado/2019.2/bin
+
+Vivado preferences file location: C:/Users/Bamboo/AppData/Roaming/Xilinx/Vivado/2019.2/vivado.xml
+Vivado preferences directory: C:/Users/Bamboo/AppData/Roaming/Xilinx/Vivado/2019.2/
+Vivado layouts directory: C:/Users/Bamboo/AppData/Roaming/Xilinx/Vivado/2019.2/layouts
+PlanAhead jar file location: 	D:/Vivado/Vivado/2019.2/lib/classes/planAhead.jar
+Vivado log file location: 	C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/vivado.log
+Vivado journal file location: 	C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/vivado.jou
+Engine tmp dir: 	C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/.Xil/Vivado-40404-LegionY7000P
+
+Xilinx Environment Variables
+----------------------------
+XILINX: D:/Vivado/Vivado/2019.2/ids_lite/ISE
+XILINX_DSP: D:/Vivado/Vivado/2019.2/ids_lite/ISE
+XILINX_PLANAHEAD: D:/Vivado/Vivado/2019.2
+XILINX_VIVADO: D:/Vivado/Vivado/2019.2
+XILINX_VIVADO_HLS: D:/Vivado/Vivado/2019.2
+
+
+GUI allocated memory:	154 MB
+GUI max memory:		3,072 MB
+Engine allocated memory: 759 MB
+
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+*/
+
+// TclEventType: START_GUI
+// Tcl Message: start_gui 
+// TclEventType: PROJECT_OPEN_DIALOG
+// [GUI Memory]: 118 MB (+121291kb) [00:00:10]
+// [Engine Memory]: 672 MB (+553531kb) [00:00:10]
+// bB (cr):  Open Project : addNotify
+// Opening Vivado Project: C:\Users\Bamboo\Desktop\vivado1\MyCpu\SingleCycleCPU\SingleCycleCPU - 副本.xpr. Version: Vivado v2019.2 
+// TclEventType: DEBUG_PROBE_SET_CHANGE
+// Tcl Message: open_project {C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.xpr} 
+// TclEventType: MSGMGR_MOVEMSG
+// TclEventType: FILESET_TARGET_UCF_CHANGE
+// TclEventType: FILE_SET_NEW
+// TclEventType: RUN_CURRENT
+// TclEventType: PROJECT_DASHBOARD_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_DASHBOARD_GADGET_NEW
+// TclEventType: PROJECT_DASHBOARD_GADGET_CHANGE
+// TclEventType: PROJECT_NEW
+// Tcl Message: open_project {C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.xpr} 
+// Tcl Message: Scanning sources... Finished scanning sources 
+// Tcl Message: INFO: [IP_Flow 19-234] Refreshing IP repositories INFO: [IP_Flow 19-1704] No user IP repositories specified 
+// TclEventType: PROJECT_NEW
+// [Engine Memory]: 844 MB (+144713kb) [00:00:15]
+// WARNING: HEventQueue.dispatchEvent() is taking  2775 ms.
+// Tcl Message: INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2019.2/data/ip'. 
+// HMemoryUtils.trashcanNow. Engine heap size: 861 MB. GUI used memory: 66 MB. Current time: 12/2/24, 3:05:23 PM CST
+// Tcl Message: open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 901.188 ; gain = 185.305 
+// Project name: SingleCycleCPU - 副本; location: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU; part: xc7a35tcpg236-1
+dismissDialog("Open Project"); // bB (cr)
+// a (cr): Critical Messages: addNotify
+// TclEventType: DG_GRAPH_STALE
+// TclEventType: FILE_SET_CHANGE
+// Tcl Message: update_compile_order -fileset sources_1 
+// Tcl Message: update_compile_order -fileset sim_1 
+selectButton(PAResourceAtoD.CmdMsgDialog_OK, "OK"); // f (a)
+dismissDialog("Critical Messages"); // a (cr)
+closeMainWindow("SingleCycleCPU - 副本 - [C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.xpr] - Vivado 2019.2"); // cr
+// HOptionPane Warning: 'A background task is running. Please wait until it completes to exit Vivado. If you choose to abort background task and exit immediately, you will lose all unsaved changes to project. (Background Task)'
+// D (cr): Invalid Top Module: addNotify
+selectButton(RDIResource.BaseDialog_OK, "OK"); // a (D)
+// TclEventType: FILE_SET_CHANGE
+// TclEventType: DG_GRAPH_STALE
+dismissDialog("Invalid Top Module"); // D (cr)

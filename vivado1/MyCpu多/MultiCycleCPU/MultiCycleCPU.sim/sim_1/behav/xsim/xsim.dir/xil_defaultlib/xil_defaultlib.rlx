@@ -1,0 +1,18 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sim_1/new/MultiCycleCPU_sim.v,1735177930,verilog,,,,multiCycleCPU_sim,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ALU.v,1735108740,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v,,ALU,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/ControlUnit.v,1735142189,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DR.v,,ControlUnit,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DR.v,1735107959,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v,,DR,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/DataMemory.v,1735122912,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/IR.v,,DataMemory,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/IR.v,1735143969,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/InstructionMemory.v,,IR,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/InstructionMemory.v,1735121156,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/MultiCycleCPU.v,,InstructionMemory,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/MultiCycleCPU.v,1735177592,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/PC.v,,multiCycleCPU,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/PC.v,1735177810,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v,,PC,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/RegisterFile.v,1735122570,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/SignZeroExtend.v,,RegisterFile,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/SignZeroExtend.v,1735122882,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/StateChange.v,,SignZeroExtend,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/StateChange.v,1735204435,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/mux2to1.v,,ChangeState,,,,,,,,
+C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sources_1/new/mux2to1.v,1735108002,verilog,,C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.srcs/sim_1/new/MultiCycleCPU_sim.v,,mux2to1,,,,,,,,

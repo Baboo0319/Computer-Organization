@@ -1,0 +1,96 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec  2 15:55:42 2024
+# Process ID: 26776
+# Current directory: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent37956 C:\Users\Bamboo\Desktop\vivado1\MyCpu\SingleCycleCPU\SingleCycleCPU.xpr
+# Log file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/vivado.log
+# Journal file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.xpr
+Scanning sources...
+Finished scanning sources
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:14 . Memory (MB): peak = 902.602 ; gain = 206.453
+update_compile_order -fileset sources_1
+reset_run synth_1
+launch_runs synth_1 -jobs 12
+[Mon Dec  2 15:56:36 2024] Launched synth_1...
+Run output will be captured here: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.runs/synth_1/runme.log
+launch_runs impl_1 -jobs 12
+[Mon Dec  2 15:57:40 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.runs/impl_1/runme.log
+open_run impl_1
+INFO: [Device 21-403] Loading part xc7a35tcpg236-1
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1196.812 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 178 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-479] Netlist was created with Vivado 2019.2
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Timing 38-478] Restoring timing data from binary archive.
+INFO: [Timing 38-479] Binary timing data restore complete.
+INFO: [Project 1-856] Restoring constraints from binary archive.
+INFO: [Project 1-853] Binary constraint restore complete.
+Reading XDEF placement.
+Reading placer database...
+Reading XDEF routing.
+Read XDEF File: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.209 . Memory (MB): peak = 1862.379 ; gain = 0.000
+Restored from archive | CPU: 0.000000 secs | Memory: 0.000000 MB |
+Finished XDEF File Restore: Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.210 . Memory (MB): peak = 1862.379 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1862.379 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 12 instances were transformed.
+  RAM32M => RAM32M (RAMD32(x6), RAMS32(x2)): 12 instances
+
+open_run: Time (s): cpu = 00:00:17 ; elapsed = 00:00:18 . Memory (MB): peak = 2052.496 ; gain = 1091.020
+WARNING: [Timing 38-313] There are no user specified timing constraints. Timing constraints are needed for proper timing analysis.
+reset_run impl_1
+launch_runs impl_1 -jobs 12
+[Mon Dec  2 15:59:39 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.runs/impl_1/runme.log
+launch_runs impl_1 -to_step write_bitstream -jobs 12
+[Mon Dec  2 16:00:58 2024] Launched impl_1...
+Run output will be captured here: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.runs/impl_1/runme.log
+open_hw_manager
+connect_hw_server -allow_non_jtag
+INFO: [Labtools 27-2285] Connecting to hw_server url TCP:localhost:3121
+INFO: [Labtools 27-2222] Launching hw_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+****** Xilinx hw_server v2019.2
+  **** Build date : Nov  6 2019 at 22:12:23
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+
+INFO: [Labtools 27-3415] Connecting to cs_server url TCP:localhost:3042
+INFO: [Labtools 27-3417] Launching cs_server...
+INFO: [Labtools 27-2221] Launch Output:
+
+
+****** Xilinx cs_server v2019.2.0
+  **** Build date : Nov 07 2019-13:28:22
+    ** Copyright 2017-2019 Xilinx, Inc. All Rights Reserved.
+
+
+
+connect_hw_server: Time (s): cpu = 00:00:00 ; elapsed = 00:00:07 . Memory (MB): peak = 2257.727 ; gain = 16.004
+open_hw_target
+INFO: [Labtoolstcl 44-466] Opening hw_target localhost:3121/xilinx_tcf/Digilent/210183794630A
+set_property PROGRAM.FILE {C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.runs/impl_1/Basys3.bit} [get_hw_devices xc7a35t_0]
+current_hw_device [get_hw_devices xc7a35t_0]
+refresh_hw_device -update_hw_probes false [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+set_property PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property FULL_PROBES.FILE {} [get_hw_devices xc7a35t_0]
+set_property PROGRAM.FILE {C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU.runs/impl_1/Basys3.bit} [get_hw_devices xc7a35t_0]
+program_hw_devices [get_hw_devices xc7a35t_0]
+INFO: [Labtools 27-3164] End of startup status: HIGH
+refresh_hw_device [lindex [get_hw_devices xc7a35t_0] 0]
+INFO: [Labtools 27-1434] Device xc7a35t (JTAG device index = 0) is programmed with a design that has no supported debug core(s) in it.
+exit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 16:02:35 2024...

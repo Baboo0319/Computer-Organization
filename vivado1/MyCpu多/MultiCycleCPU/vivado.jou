@@ -1,0 +1,14 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jan 22 15:35:22 2025
+# Process ID: 31020
+# Current directory: C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent12344 C:\Users\Bamboo\Desktop\vivado1\MyCpu1\MultiCycleCPU\MultiCycleCPU.xpr
+# Log file: C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/vivado.log
+# Journal file: C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Bamboo/Desktop/vivado1/MyCpu1/MultiCycleCPU/MultiCycleCPU.xpr
+update_compile_order -fileset sources_1

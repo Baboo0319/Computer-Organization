@@ -1,0 +1,42 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Mon Dec  2 15:05:00 2024
+# Process ID: 40404
+# Current directory: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent11736 C:\Users\Bamboo\Desktop\vivado1\MyCpu\SingleCycleCPU\SingleCycleCPU - 副本.xpr
+# Log file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/vivado.log
+# Journal file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.xpr}
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/ALU.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/CLK_slow.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/ControlUnit.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/DataMemory.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/Display_7SegLED.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/InstructionMemory.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/PC.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/RegisterFile.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/Select.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/SignZeroExtend.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/SingleCycleCPU.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/Transfer.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sources_1/new/keyboard_CLK.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCyclexit
+INFO: [Common 17-206] Exiting Vivado at Mon Dec  2 15:06:21 2024...
+] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/constrs_1/new/YinJiao.xdc'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sim_1/new/SingalCycleCPU_sim.v'.
+CRITICAL WARNING: [Project 1-19] Could not find the file 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.srcs/sim_1/new/basys_sim.v'.
+Scanning sources...
+Finished scanning sources
+WARNING: [Project 1-509] GeneratedRun file for 'synth_1' not found
+WARNING: [Project 1-509] GeneratedRun file for 'impl_1' not found
+WARNING: [filemgmt 56-3] IPUserFilesDir: Could not find the directory 'C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU/SingleCycleCPU - 副本.ip_user_files'.
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Vivado/Vivado/2019.2/data/ip'.
+open_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 901.188 ; gain = 185.305
+update_compile_order -fileset sources_1
+update_compile_order -fileset sim_1

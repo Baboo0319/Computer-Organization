@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec  3 12:37:38 2024
+# Process ID: 15992
+# Current directory: C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15804 C:\Users\Bamboo\Desktop\vivado1\MyCpu\InstructionMemory\InstructionMemory.xpr
+# Log file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory/vivado.log
+# Journal file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory/InstructionMemory.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory/IM_sim_behav.wcfg
+source IM_sim.tcl
+run 100 ns
+close_sim

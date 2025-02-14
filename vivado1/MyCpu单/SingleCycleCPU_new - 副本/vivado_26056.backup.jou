@@ -1,0 +1,19 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Dec  4 09:52:40 2024
+# Process ID: 26056
+# Current directory: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU_new - 副本
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent15112 C:\Users\Bamboo\Desktop\vivado1\MyCpu\SingleCycleCPU_new - 副本\SingleCycleCPU_new.xpr
+# Log file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU_new - 副本/vivado.log
+# Journal file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU_new - 副本\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project {C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU_new - 副本/SingleCycleCPU_new.xpr}
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config {C:/Users/Bamboo/Desktop/vivado1/MyCpu/SingleCycleCPU_new - 副本/SingleCycleCPU_sim_behav.wcfg}
+source SingleCycleCPU_sim.tcl
+run 10 us
+close_sim

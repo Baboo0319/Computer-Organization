@@ -1,0 +1,30 @@
+#-----------------------------------------------------------
+# Vivado v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Tue Dec  3 20:02:36 2024
+# Process ID: 7576
+# Current directory: C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory
+# Command line: vivado.exe -gui_launcher_event rodinguilauncherevent908 C:\Users\Bamboo\Desktop\vivado1\MyCpu\InstructionMemory\InstructionMemory.xpr
+# Log file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory/vivado.log
+# Journal file: C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory\vivado.jou
+#-----------------------------------------------------------
+start_gui
+open_project C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory/InstructionMemory.xpr
+update_compile_order -fileset sources_1
+launch_simulation
+open_wave_config C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory/IM_sim_behav.wcfg
+source IM_sim.tcl
+close_sim
+launch_simulation
+launch_simulation
+open_wave_config C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory/IM_sim_behav.wcfg
+source IM_sim.tcl
+relaunch_sim
+current_wave_config {IM_sim_behav.wcfg}
+add_wave {{/IM_sim/JumpPC}} 
+relaunch_sim
+relaunch_sim
+relaunch_sim
+save_wave_config {C:/Users/Bamboo/Desktop/vivado1/MyCpu/InstructionMemory/IM_sim_behav.wcfg}
+close_sim

@@ -1,0 +1,729 @@
+$date
+   Thu Dec 26 17:11:15 2024
+$end
+$version
+  2019.2
+$end
+$timescale
+  1ps
+$end
+$scope module multiCycleCPU_sim $end
+$var reg 1 ! CLK $end
+$var reg 1 " Reset $end
+$var wire 32 # curPC [31:0] $end
+$var wire 32 $ nextPC [31:0] $end
+$var wire 5 % rs [4:0] $end
+$var wire 5 & rt [4:0] $end
+$var wire 32 ' Out1 [31:0] $end
+$var wire 32 ( Out2 [31:0] $end
+$var wire 32 ) Result [31:0] $end
+$var wire 32 * DBData [31:0] $end
+$scope module uut $end
+$var wire 1 + CLK $end
+$var wire 1 , Reset $end
+$var wire 5 % rs [4:0] $end
+$var wire 5 & rt [4:0] $end
+$var wire 6 - OpCode [5:0] $end
+$var wire 32 ' Out1 [31:0] $end
+$var wire 32 ( Out2 [31:0] $end
+$var wire 32 # curPC [31:0] $end
+$var wire 32 $ nextPC [31:0] $end
+$var wire 32 ) Result [31:0] $end
+$var wire 32 * DBData [31:0] $end
+$var wire 32 . Instruction [31:0] $end
+$var wire 3 / ALUOp [2:0] $end
+$var wire 6 0 func [5:0] $end
+$var wire 3 1 state [2:0] $end
+$var wire 32 2 Extout [31:0] $end
+$var wire 32 3 DMOut [31:0] $end
+$var wire 16 4 Immediate [15:0] $end
+$var wire 5 5 rd [4:0] $end
+$var wire 5 6 sa [4:0] $end
+$var wire 32 7 JumpPC [31:0] $end
+$var wire 1 8 zero $end
+$var wire 1 9 sign $end
+$var wire 1 : PCWre $end
+$var wire 1 ; ALUSrcA $end
+$var wire 1 < ALUSrcB $end
+$var wire 1 = DBDataSrc $end
+$var wire 1 > RegWre $end
+$var wire 1 ? IRWre $end
+$var wire 1 @ WrRegDSrc $end
+$var wire 1 A InsMemRW $end
+$var wire 1 B RD $end
+$var wire 1 C WR $end
+$var wire 1 D ExtSel $end
+$var wire 2 E RegDst [1:0] $end
+$var wire 2 F PCSrc [1:0] $end
+$var wire 4 G PC4 [3:0] $end
+$var wire 32 H PC_add_4 [31:0] $end
+$var wire 32 I drPC_add_4 [31:0] $end
+$var wire 32 J drOut1 [31:0] $end
+$var wire 32 K drOut2 [31:0] $end
+$var wire 32 L DAddr [31:0] $end
+$var wire 32 M DB [31:0] $end
+$var wire 32 N drDB [31:0] $end
+$scope module ST $end
+$var wire 6 - opCode [5:0] $end
+$var wire 6 0 func [5:0] $end
+$var wire 1 , Reset $end
+$var wire 1 + clk $end
+$var reg 3 O new_state [2:0] $end
+$var parameter 3 P IF [2:0] $end
+$var parameter 3 Q ID [2:0] $end
+$var parameter 3 R EXE1 [2:0] $end
+$var parameter 3 S EXE2 [2:0] $end
+$var parameter 3 T EXE3 [2:0] $end
+$var parameter 3 U WB1 [2:0] $end
+$var parameter 3 V WB2 [2:0] $end
+$var parameter 3 W MEM [2:0] $end
+$upscope $end
+$scope module CU $end
+$var wire 3 1 state [2:0] $end
+$var wire 6 - OpCode [5:0] $end
+$var wire 6 0 func [5:0] $end
+$var wire 1 8 zero $end
+$var wire 1 9 sign $end
+$var reg 1 X IRWre $end
+$var reg 1 Y PCWre $end
+$var reg 1 Z ALUSrcA $end
+$var reg 1 [ ALUSrcB $end
+$var reg 1 \ DBDataSrc $end
+$var reg 1 ] WrRegDSrc $end
+$var reg 1 ^ InsMemRW $end
+$var reg 1 _ RD $end
+$var reg 1 ` WR $end
+$var reg 1 a ExtSel $end
+$var reg 2 b RegDst [1:0] $end
+$var reg 2 c PCSrc [1:0] $end
+$var reg 3 d ALUOp [2:0] $end
+$var reg 1 e RegWre $end
+$var parameter 3 f IF [2:0] $end
+$var parameter 3 g ID [2:0] $end
+$var parameter 3 h EXE1 [2:0] $end
+$var parameter 3 i EXE2 [2:0] $end
+$var parameter 3 j EXE3 [2:0] $end
+$var parameter 3 k WB1 [2:0] $end
+$var parameter 3 l WB2 [2:0] $end
+$var parameter 3 m MEM [2:0] $end
+$upscope $end
+$scope module pc $end
+$var wire 1 + CLK $end
+$var wire 1 , Reset $end
+$var wire 1 : PCWre $end
+$var wire 2 F PCSrc [1:0] $end
+$var wire 16 4 Immediate [15:0] $end
+$var wire 32 ' dataFromRs [31:0] $end
+$var wire 32 7 JumpPC [31:0] $end
+$var reg 32 n Address [31:0] $end
+$var reg 32 o nextPC [31:0] $end
+$var wire 32 H PC_add_4 [31:0] $end
+$var wire 4 G PC4 [3:0] $end
+$upscope $end
+$scope module IM $end
+$var wire 32 # IAddr [31:0] $end
+$var wire 1 A RW $end
+$var reg 32 p IDataOut [31:0] $end
+$upscope $end
+$scope module ir $end
+$var wire 1 + clk $end
+$var wire 1 ? IRWre $end
+$var wire 32 . instruction [31:0] $end
+$var wire 1 q PC4 $end
+$var reg 6 r OpCode [5:0] $end
+$var reg 6 s func [5:0] $end
+$var reg 5 t rs [4:0] $end
+$var reg 5 u rt [4:0] $end
+$var reg 5 v rd [4:0] $end
+$var reg 16 w Immediate [15:0] $end
+$var reg 5 x sa [4:0] $end
+$var reg 32 y JumpPC [31:0] $end
+$upscope $end
+$scope module RF $end
+$var wire 1 + CLK $end
+$var wire 1 @ WrRegDSrc $end
+$var wire 32 I PC_add_4 [31:0] $end
+$var wire 2 E RegDst [1:0] $end
+$var wire 1 > RegWre $end
+$var wire 5 % rs [4:0] $end
+$var wire 5 & rt [4:0] $end
+$var wire 5 5 rd [4:0] $end
+$var wire 32 N drDB [31:0] $end
+$var reg 32 z Data1 [31:0] $end
+$var reg 32 { Data2 [31:0] $end
+$var wire 32 * writeData [31:0] $end
+$var reg 5 | writeReg [4:0] $end
+$var integer 32 } i $end
+$upscope $end
+$scope module pcadd $end
+$var wire 1 + clk $end
+$var wire 32 H in [31:0] $end
+$var reg 32 ~ out [31:0] $end
+$upscope $end
+$scope module Adr $end
+$var wire 1 + clk $end
+$var wire 32 ' in [31:0] $end
+$var reg 32 !! out [31:0] $end
+$upscope $end
+$scope module Bdr $end
+$var wire 1 + clk $end
+$var wire 32 ( in [31:0] $end
+$var reg 32 "! out [31:0] $end
+$upscope $end
+$scope module alu $end
+$var wire 32 J ReadData1 [31:0] $end
+$var wire 32 K ReadData2 [31:0] $end
+$var wire 32 2 Ext [31:0] $end
+$var wire 5 6 Sa [4:0] $end
+$var wire 3 / ALUop [2:0] $end
+$var wire 1 ; ALUSrcA $end
+$var wire 1 < ALUSrcB $end
+$var wire 1 8 zero $end
+$var reg 32 #! Result [31:0] $end
+$var wire 1 9 sign $end
+$var wire 32 $! InA [31:0] $end
+$var wire 32 %! InB [31:0] $end
+$upscope $end
+$scope module aluOutDr $end
+$var wire 1 + clk $end
+$var wire 32 ) in [31:0] $end
+$var reg 32 &! out [31:0] $end
+$upscope $end
+$scope module DM $end
+$var wire 32 L DAddr [31:0] $end
+$var wire 32 K DataIn [31:0] $end
+$var wire 1 B RD $end
+$var wire 1 C WR $end
+$var reg 32 '! DataOut [31:0] $end
+$var wire 32 (! address [31:0] $end
+$upscope $end
+$scope module db $end
+$var wire 32 ) ALUResult [31:0] $end
+$var wire 32 3 DMOut [31:0] $end
+$var wire 1 = DBDataSrc $end
+$var wire 32 M DB [31:0] $end
+$upscope $end
+$scope module dbdr $end
+$var wire 1 + clk $end
+$var wire 32 M in [31:0] $end
+$var reg 32 )! out [31:0] $end
+$upscope $end
+$scope module SZE $end
+$var wire 16 4 Immediate [15:0] $end
+$var wire 1 D ExtSel $end
+$var wire 32 2 Out [31:0] $end
+$upscope $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+1!
+bx !!
+0"
+bx "!
+b0 #
+bx #!
+b100 $
+bx $!
+bx %
+bx %!
+bx &
+bx &!
+bx '
+bx '!
+bx (
+bx00 (!
+bx )
+bx )!
+bx *
+1+
+0,
+bx -
+b100100000000010000000000001000 .
+bx /
+bx 0
+b0 1
+bx 2
+bx 3
+bx 4
+bx 5
+bx 6
+bx 7
+x8
+x9
+0:
+x;
+x<
+x=
+0>
+0?
+x@
+1A
+0B
+0C
+xD
+bx E
+bx F
+b0 G
+b100 H
+bx I
+bx J
+bx K
+bx L
+bx M
+bx N
+b0 O
+b0 P
+b1 Q
+b110 R
+b101 S
+b10 T
+b111 U
+b100 V
+b11 W
+0X
+0Y
+xZ
+x[
+x\
+x]
+1^
+0_
+0`
+xa
+bx b
+bx c
+bx d
+0e
+b0 f
+b1 g
+b110 h
+b101 i
+b10 j
+b111 k
+b100 l
+b11 m
+b0 n
+b100 o
+b100100000000010000000000001000 p
+0q
+bx r
+bx s
+bx t
+bx u
+bx v
+bx w
+bx x
+bx y
+bx z
+bx {
+bx |
+b100000 }
+bx ~
+$end
+#25000
+1"
+1,
+#50000
+0!
+0+
+b1 1
+1?
+b1 O
+1X
+0Y
+x\
+x]
+1^
+0_
+0`
+xa
+bx b
+bx c
+0e
+#100000
+1!
+bx !!
+bx "!
+bx &!
+bx )!
+1+
+b100 I
+b100 ~
+#150000
+0!
+bx #!
+bx $!
+b0 %
+b1000 %!
+b1 &
+b0 '
+b0 (
+0+
+b1001 -
+b0 /
+b110 1
+b1000 2
+b1000 4
+b0 5
+b0 6
+b1000000000000100000 7
+0;
+1<
+0=
+0?
+1@
+1D
+b1 E
+b0 F
+b110 O
+0X
+0Y
+0Z
+1[
+0\
+1]
+1^
+0_
+0`
+1a
+b1 b
+b0 c
+b0 d
+0e
+b100 o
+b1001 r
+bx s
+b0 t
+b1 u
+b0 v
+b1000 w
+b0 x
+b1000000000000100000 y
+b0 z
+b0 {
+b1 |
+#200000
+1!
+b0 !!
+b0 "!
+b1000 #!
+b0 $!
+b1000 %!
+bx &!
+b1000 )
+bx )!
+1+
+08
+09
+b0 J
+b0 K
+b1000 M
+b100 ~
+#250000
+0!
+0+
+b111 1
+1>
+b111 O
+0X
+0Y
+0\
+1]
+1^
+0_
+0`
+1a
+b1 b
+b0 c
+1e
+#300000
+1!
+b0 !!
+b0 "!
+b1000 &!
+b100000 (!
+b1000 )!
+b1000 *
+1+
+b1000 L
+b1000 N
+b100 ~
+#350000
+0!
+b1000 (
+0+
+b0 1
+1:
+0>
+b0 O
+0X
+1Y
+0\
+1]
+1^
+0_
+0`
+1a
+b1 b
+b0 c
+0e
+b0 z
+b1000 {
+#400000
+1!
+b0 !!
+b1000 "!
+b100 #
+b1000 $
+b1000 %!
+b1000 &!
+b1000 )!
+1+
+b110100000000100000000000000010 .
+b1000 H
+b1000 K
+b100 n
+b1000 o
+b110100000000100000000000000010 p
+b100 ~
+#450000
+0!
+0+
+b1 1
+0:
+1?
+b1 O
+1X
+0Y
+0\
+1]
+1^
+0_
+0`
+1a
+b1 b
+b0 c
+0e
+#500000
+1!
+b0 !!
+b1000 "!
+b1000 &!
+b1000 )!
+1+
+b1000 I
+b1000 ~
+#550000
+0!
+b10 #!
+b10 %!
+b10 &
+b0 (
+b10 )
+0+
+b1101 -
+b11 /
+b110 1
+b10 2
+b10 4
+b10000000000000001000 7
+0?
+0D
+b10 M
+b110 O
+0X
+0Y
+0Z
+1[
+0\
+1]
+1^
+0_
+0`
+0a
+b1 b
+b0 c
+b11 d
+0e
+b1000 o
+b1101 r
+bx s
+b0 t
+b10 u
+b0 v
+b10 w
+b0 x
+b10000000000000001000 y
+b0 z
+b0 {
+b10 |
+#600000
+1!
+b0 !!
+b0 "!
+b10 %!
+b10 &!
+b1000 (!
+b10 )!
+b10 *
+1+
+b0 K
+b10 L
+b10 N
+b1000 ~
+#650000
+0!
+0+
+b111 1
+1>
+b111 O
+0X
+0Y
+0\
+1]
+1^
+0_
+0`
+0a
+b1 b
+b0 c
+1e
+#700000
+1!
+b0 !!
+b0 "!
+b10 &!
+b10 )!
+1+
+b1000 ~
+#750000
+0!
+b10 (
+0+
+b0 1
+1:
+0>
+b0 O
+0X
+1Y
+0\
+1]
+1^
+0_
+0`
+0a
+b1 b
+b0 c
+0e
+b0 z
+b10 {
+#800000
+1!
+b0 !!
+b10 "!
+b1000 #
+b1100 $
+b10 %!
+b10 &!
+b10 )!
+1+
+b111000010000110000000000001000 .
+b1100 H
+b10 K
+b1000 n
+b1100 o
+b111000010000110000000000001000 p
+b1000 ~
+#850000
+0!
+0+
+b1 1
+0:
+1?
+b1 O
+1X
+0Y
+0\
+1]
+1^
+0_
+0`
+0a
+b1 b
+b0 c
+0e
+#900000
+1!
+b0 !!
+b10 "!
+b10 &!
+b10 )!
+1+
+b1100 I
+b1100 ~
+#950000
+0!
+b1000 #!
+b10 %
+b1000 %!
+b11 &
+b10 '
+b0 (
+b1000 )
+0+
+b1110 -
+b111 /
+b110 1
+b1000 2
+b1000 4
+b1000011000000000000100000 7
+0?
+b1000 M
+b110 O
+0X
+0Y
+0Z
+1[
+0\
+1]
+1^
+0_
+0`
+0a
+b1 b
+b0 c
+b111 d
+0e
+b1100 o
+b1110 r
+bx s
+b10 t
+b11 u
+b0 v
+b1000 w
+b0 x
+b1000011000000000000100000 y
+b10 z
+b0 {
+b11 |
+#1000000
+1!
+b10 !!
+b0 "!
+b1010 #!
+b10 $!
+b1000 %!
+b1000 &!
+b100000 (!
+b1010 )
+b1000 )!
+b1000 *
+1+
+b10 J
+b0 K
+b1000 L
+b1010 M
+b1000 N
+b1100 ~

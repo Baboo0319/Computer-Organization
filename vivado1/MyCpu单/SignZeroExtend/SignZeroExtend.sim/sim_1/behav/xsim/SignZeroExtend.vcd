@@ -1,0 +1,42 @@
+$date
+   Tue Dec  3 12:42:42 2024
+$end
+$version
+  2019.2
+$end
+$timescale
+  1ps
+$end
+$scope module SignZeroExtend_sim $end
+$var reg 16 ! Immediate [15:0] $end
+$var reg 1 " ExtSel $end
+$var wire 32 # Out [31:0] $end
+$scope module uut $end
+$var wire 16 $ Immediate [15:0] $end
+$var wire 1 % ExtSel $end
+$var wire 32 # Out [31:0] $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+b0 !
+0"
+b0 #
+b0 $
+0%
+$end
+#50000
+b111 !
+b111 #
+b111 $
+#100000
+b1010 !
+1"
+b1010 #
+b1010 $
+1%
+#150000
+b1111111111111001 !
+b11111111111111111111111111111001 #
+b1111111111111001 $
